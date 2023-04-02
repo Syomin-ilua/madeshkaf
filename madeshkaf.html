@@ -15,6 +15,7 @@
     <!-- Шапка и основная секция сайта -->
 
     <header class="header">
+        <div class="header__background"></div>
         <div class="header_container">
             <div class="header_wrap_cap">
                 <a href="madeshkaf.html" class="logo">
@@ -117,7 +118,7 @@
                         
                     </div>
                     <form class="form_discount">
-                        <input class="input_tel_discount" type="tel" placeholder="Введите номер телефона">
+                        <input class="input_tel_discount" required type="tel" placeholder="Введите номер телефона">
                         <button class="button_discount">Получить скидку</button>
                     </form>
                 </div>
@@ -345,6 +346,7 @@
                         <div class="special__offers_wrap special__offers_rivera-1">
                             <p class="special__offers_title">Хит продаж</p>
                         </div>
+                        <p class="offers__price_litle"></p>
                         <div class="special__offers_name special__offers_rivera">
                             <p class="offers__name">Шкаф Riviera/1</p>
                             <p class="offers__price_rivera">1000р</p>
@@ -388,7 +390,7 @@
                         </div>
                             <p class="offers__price_time">24 мес</p>
                         <div class="special__offers_name">
-                            <p class="offers__name">Шкаф Riviera/5</p>
+                            <p class="offers__name offers__name_rivera-5">Шкаф Riviera/5</p>
                             <p class="offers__price offers__priceTime">80p/мес</p>
                         </div>
                     </div>
@@ -437,7 +439,7 @@
                 <h3 class="stocks__title">Акции</h3>
                 <p class="stocks__subtitle">Узнай первым об акциях и скидках</p>
                 <form class="form__stocks" action="#">
-                    <input class="input__stocks_email" type="email" placeholder="введите email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+                    <input class="input__stocks_email" type="text" placeholder="номер телефона или email">
                     <button class="button__stocks">Подписаться</button>
                 </form>
             </div>
@@ -491,22 +493,34 @@
             <div class="production__wrap">
                 <div class="production__wrap_text">
                     <div class="production__item">
-                        <span class="production__span">1.</span>
+                        <div class="production__span_wrap">
+                            <p class="production__before_span">0</p>
+                            <span class="production__span">1</span>
+                        </div>
                         <p class="production__text">Минимальный опыт работы наших монтажников — 10 лет</p>
                     </div>
                     
                     <div class="production__item">
-                        <span class="production__span">2.</span>
+                        <div class="production__span_wrap">
+                            <p class="production__before_span">0</p>
+                            <span class="production__span">2</span>
+                        </div>
                         <p class="production__text">Любые размеры, цвет, дизайн и фурнитура</p>
                     </div>
 
                     <div class="production__item">
-                        <span class="production__span">3.</span>
+                        <div class="production__span_wrap">
+                            <p class="production__before_span">0</p>
+                            <span class="production__span">3</span>
+                        </div>
                         <p class="production__text">Установка в удобные для Вас день и время</p>
                     </div>
 
                     <div class="production__item">
-                        <span class="production__span">4.</span>
+                        <div class="production__span_wrap">
+                            <p class="production__before_span">0</p>
+                            <span class="production__span">4</span>
+                        </div>
                         <p class="production__text">Сроки изготовления 5-15 дней</p>
                     </div>
                 </div>
@@ -527,9 +541,7 @@
                     <p class="work_text">Заказать выезд дизайнера</p>
                 </div>
                 <div class="work__line_one">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    
                 </div>
                 <div class="work__item">
                     <img class="work_img" src="img/working_icon/measurement.svg" alt="Image: Обмер">
@@ -539,9 +551,7 @@
 
             <div class="work__wrap_lineOne">
                 <div class="work__line_two">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                   
                 </div>
             </div>
             
@@ -551,9 +561,7 @@
                     <p class="work_text">Оформление договора</p>
                 </div>
                 <div class="work__line_three">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    
                 </div>
                 <div class="work__item work__item_project">
                     <img class="work_img" src="img/working_icon/building_project.svg" alt="Image: Построение проекта">
@@ -563,9 +571,7 @@
 
             <div class="work__wrap_lineTwo">
                 <div class="work__line_foo">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    
                 </div>
             </div>
 
@@ -575,9 +581,7 @@
                     <p class="work_text">Производство</p>
                 </div>
                 <div class="work__line_five">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    
                 </div>
                 <div class="work__item">
                     <img class="work_img" src="img/working_icon/installation.svg" alt="Image: Установка">
@@ -605,6 +609,7 @@
                     </div>
                 </div>
             </div>
+            <a href="test.html" class="test__btn_start_mobile">Пройти тест</a>
         </div>
     </section>
 
@@ -665,10 +670,12 @@
 
     <section class="footer">
         <div class="footer__container">
-            <a href="madeshkaf.html" class="footer__logo_wrap">
-                <img class="footer__logo" src="img/logo_footer.svg" alt="Icon: Logo">
+            <div href="madeshkaf.html" class="footer__logo_wrap">
+                <a href="madeshkaf.html">
+                    <img class="footer__logo" src="img/logo_footer.svg" alt="Icon: Logo">
+                </a>
                 <img class="footer__location-mobile" src="img/map_mobile.png" alt="Image: Map Mobile">
-            </a>
+            </div>
             <div class="footer__links">
                 <a href="" class="footer__link">О нас</a>
                 <a href="catalog.html" class="footer__link">Каталог</a>

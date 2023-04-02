@@ -73,20 +73,13 @@ function formStocksSubmit(e) {
 
     const inputStocksEmail = document.querySelector('.input__stocks_email');
     const inputStocksValue = inputStocksEmail.value;
-    const inputReg = inputStocksEmail.getAttribute('data-reg');
-    const reg = new RegExp(inputReg);
 
-    if(reg.test(inputStocksValue)) {
-        inputStocksEmail.style.background = '#FFFFFF'
-        inputStocksEmail.style.border = ''; 
+    if(inputStocksValue !== '') {
         modalStocks.classList.add('active');
         overlayStocks.classList.add('active');
         scrollController.disabledScroll();
         formStocks.reset();
-    } else {
-        inputStocksEmail.style.background = '#FBE9E9';
-        inputStocksEmail.style.border = '1px solid #F86464';
-    }
+    } 
 }
 
 modalStocksClose.addEventListener('click', modalStocksShut);

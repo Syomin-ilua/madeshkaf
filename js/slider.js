@@ -71,7 +71,7 @@ $('.reviews__wrapper').slick({
     nextArrow: '<div class="reviews__arrow_next"></div>',
     responsive: [
         {
-            breakpoint: 500,
+            breakpoint: 753,
             settings: {
                 arrows: false
             }
