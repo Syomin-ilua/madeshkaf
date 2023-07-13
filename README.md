@@ -6,3 +6,5 @@
 - JavaScript
 - Normolize.css
 - Slick Slider
+
+Ссылка на проект: https://syomin-ilua.github.io/madeshkaf/madeshkaf.html
